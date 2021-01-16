@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: white;
+    padding: 0 120px;
+}
+
+.nav__logo{
+    height: 60%;
+}
+
+.nav__logo img{
+    height: 100%;
+}
+
+.nav__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav__links a{
+    display: block;
+    text-decoration: none;
+    margin-left: 50px;
+    color: #252b41;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav__links a.active{
+    color: #fa4a0e;
+}
+
+.main{
+    display: block;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    color: white;
+}
+
+.main .content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.back_img{
+    display: block;
+    position: absolute;
+    top: -220px;
+    user-select: none;
+    width: 100%;
+    filter: brightness(35%);
+}
+
+.main__title{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.main__heading{
+    display: block;
+    padding: 0 250px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.main__subheading{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.main__buttons{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons__playstore,
+.buttons__appstore{
+    margin-top: 50px;
+    display: block;
+    width: 180px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+}
+
+.buttons__playstore{
+    background-color: #f84a0d;
+}
+
+.buttons__appstore{
+    border: 2px solid white;
+    line-height: 56px;
+}
